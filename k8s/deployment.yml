@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nginx
+        track: stable
+    spec:
+      containers:
+      - name: nginx
+        image: index.tenxcloud.com/docker_library/nginx:1.7.9
+        ports:
+        - containerPort: 80
