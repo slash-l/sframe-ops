@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+   name: mumu-ns-quota
+   namespace: mumu-ns
+spec:
+  hard:
+    requests.cpu: "2"
+    requests.memory: 2Gi
+    limits.cpu: "2"
+    limits.memory: 2Gi
