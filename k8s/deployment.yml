@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: nginx-deployment2
   namespace: mumu-ns
 spec:
   replicas: 1
@@ -14,5 +14,12 @@ spec:
       containers:
       - name: nginx
         image: index.tenxcloud.com/docker_library/nginx:1.7.9
+        resources:
+          requests:
+            memory: "100G"
+            cpu: "90"
+          limits:
+            memory: "100G"
+            cpu: "90"
         ports:
         - containerPort: 80
