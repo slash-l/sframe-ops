@@ -16,8 +16,8 @@ spec:
         image: index.tenxcloud.com/docker_library/nginx:1.7.9
         resources:
           requests:
-            memory: "50G"
-            cpu: "40"
+            memory: "30G"
+            cpu: "10"
           limits:
             memory: "100G"
             cpu: "90"
