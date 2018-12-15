@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
     - name: mynginx
-      image: index.tenxcloud.com/docker_library/nginx:1.7.9
+      image: nginx:1.15.7
       ports:
         - name: http
           containerPort: 80
