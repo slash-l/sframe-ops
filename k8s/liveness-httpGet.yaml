@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-demo2
+  name: liveness-httpGet
   namespace: mumu-ns
   labels:
     app: mumuapp
