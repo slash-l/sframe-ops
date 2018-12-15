@@ -10,6 +10,13 @@ spec:
   containers:
     - name: mynginx
       image: nginx:1.15.7
+      resources:
+        requests:
+          cpu: 0.1
+          memeory: "256m" 
+        limits:
+          cpu: 1
+          memory: 1G
       ports:
         - name: http
           containerPort: 80
