@@ -5,7 +5,7 @@ metadata:
   namespace: mumu-ns
 spec:
   containers:
-  - name: liveness-exec-container
+  - name: mybusybox
     image: busybox:latest
     imagePullPolicy: IfNotPresent
     command: 
