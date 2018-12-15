@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-demo
+  namespace: mumu-ns
+  labels:
+    app: mumuapp
+    tier: webserver
+spec:
+  containers:
+    - name: mynginx
+      image: index.tenxcloud.com/docker_library/nginx:1.7.9
+      ports:
+        - name: http
+          containerPort: 80
+        - name: https
+          containerPort: 443
