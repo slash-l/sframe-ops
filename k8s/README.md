@@ -1,4 +1,4 @@
-#### liujingyi
+#### mumu ops
 #### namespace
 namespace.yml 创建命名空间
 limitRange.yml LimitRange 资源指定限制在某个命名空间上
