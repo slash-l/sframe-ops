@@ -16,7 +16,7 @@ spec:
         release: canary
     spec:
       containers:
-      - name: myNginx
+      - name: my_nginx
         image: nginx:1.15.7
         ports:
         - name: http
