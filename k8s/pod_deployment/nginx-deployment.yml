@@ -9,7 +9,7 @@ spec:
     matchLabels:
       app: myNginx
       release: canary
-  templates:
+  template:
     metadata:
       labels:
         app: myNginx
