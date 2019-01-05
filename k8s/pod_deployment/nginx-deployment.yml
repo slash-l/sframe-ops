@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  namespace: mumu-ns
+spec:
+  replica: 2
+  selector:
+    matchLabels:
+      app: myNginx
+      release: canary
+  templates:
+    metadata:
+      labels:
+        app: myNginx
+        release: canary
+    spec:
+      containers:
+      - name: myNginx
+        images: nginx:1.15.7
+        ports:
+        - name: http
+          containerPort: 80
+          
